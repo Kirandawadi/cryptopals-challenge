@@ -5,12 +5,12 @@ A collection of exercises that demonstrate attacks on real-world crypto.
 | ID  | Challenge Name | Completed |
 |-----|---------------|----------|
 |     | **Set 1: Basics** | |
-| 1   | Convert hex to base64 | ✅ |
-| 2   | Fixed XOR | ✅ |
-| 3   | Single-byte XOR cipher | ✅ |
-| 4   | Detect single-character XOR | ✅ |
-| 5   | Implement repeating-key XOR | ✅ |
-| 6   | Break repeating-key XOR | ❌ |
+| 1   | [Convert hex to base64](./Set%201/challenge1.py) | ✅ |
+| 2   | [Fixed XOR](./Set%201/challenge2.py) | ✅ |
+| 3   | [Single-byte XOR cipher](./Set%201/challenge3.py) | ✅ |
+| 4   | [Detect single-character XOR](./Set%201/challenge4.py) | ✅ |
+| 5   | [Implement repeating-key XOR](./Set%201/challenge5.py) | ✅ |
+| 6   | [Break repeating-key XOR](./Set%201/challenge6.py) | ❌ |
 | 7   | AES in ECB mode | ❌ |
 | 8   | Detect AES in ECB mode | ❌ |
 |     | **Set 2: Block crypto** | |

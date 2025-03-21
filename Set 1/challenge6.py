@@ -112,6 +112,13 @@ def find_decryption_key(input_str):
     return required_key, required_plaintext, highest_score
 
 
+def repeating_key_xor(line, key):
+    final_output: str = ""
+    for i in range(len(line)):
+        final_output += chr(ord(line[i]) ^ ord(key[i % len(key)]))
+    return final_output
+
+
 def xor_string(s, c):
     """given an ascii string s, xor each one by char c"""
     result = ""
@@ -176,7 +183,9 @@ def main():
     raw_bytes = get_raw_bytes_from_file(file_name)
     KEYSIZE = find_key_size(raw_bytes)
     KEY = find_key(raw_bytes, KEYSIZE)
-    print(KEY)
+    print(f"The repeating XOR key is: \"{KEY}\"\n")
+    final_text = repeating_key_xor(raw_bytes.decode("utf-8"), KEY)
+    print(f"Decrypted text is: \n {final_text}")
 
 
 if __name__ == "__main__":

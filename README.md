@@ -10,7 +10,7 @@ A collection of exercises that demonstrate attacks on real-world crypto.
 | 3   | [Single-byte XOR cipher](./Set%201/challenge3.py) | ✅ |
 | 4   | [Detect single-character XOR](./Set%201/challenge4.py) | ✅ |
 | 5   | [Implement repeating-key XOR](./Set%201/challenge5.py) | ✅ |
-| 6   | [Break repeating-key XOR](./Set%201/challenge6.py) | ❌ |
+| 6   | [Break repeating-key XOR](./Set%201/challenge6.py) | ✅ |
 | 7   | AES in ECB mode | ❌ |
 | 8   | Detect AES in ECB mode | ❌ |
 |     | **Set 2: Block crypto** | |

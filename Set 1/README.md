@@ -44,6 +44,27 @@ If you've written any crypto code in the past, you're going to feel like skippin
 
 ---
 ### 6. Break repeating-key XOR
+
+- **Read Base64-encoded File**  
+  - Loaded the contents of `6.txt`, which was encoded in Base64.  
+  - Decoded it to get the XOR-encrypted bytes.
+
+- **Determined Key Size**  
+  - Used the **Hamming distance** between chunks of bytes to estimate the probable key size.  
+  - Normalized distances and selected the key size with the smallest average distance.
+
+- **Transposed Blocks**  
+  - Split the bytes into blocks of the determined key size.  
+  - Transposed them to analyze one key-byte at a time.
+
+- **Determined XOR Key**  
+  - Brute-forced each transposed block with all possible single-byte keys (0-255).  
+  - Used English letter frequency scoring to find the most probable key for each block.  
+
+- **Recovered Plaintext**  
+  - Combined the discovered key bytes to reconstruct the repeating XOR key.  
+  - Used the key to decrypt the message.
+
 ---
 ### 7. AES in ECB mode
 ---
